@@ -2,7 +2,7 @@
 Np=1;
 DISTRIBUTION='quadratic';
 TORQ_CONST = 1;
-MODIFY_SREF=0;
+MODIFY_SREF=1;
 lambdaU = 1e0; 
 lmd = 1e7;
 lambdaTRJ = [lmd, 1e5];
