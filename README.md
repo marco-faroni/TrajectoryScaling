@@ -20,6 +20,8 @@ Choose the trajectory scaling method:
 * ``cthor`` : use a Cartesian-space MPC trajectory scaling algorithm (see [2])
 * ``local`` : use a non-look ahead joint-space trajectory scaling algorithm (see [3])
 * ``clocal`` : use a non-look ahead Cartesian-space trajectory scaling algorithm (see [3])
+*_Important_*: ``local`` and ``clocal`` can be used with or without time-law adaptation module (see [3] for details). If you wish to activate the timing-law adaptation module you should set the parameter MODIFY_SREF equal to 1 in the files _controllers/local/controllerdata.m_ and _controllers/clocal/controllerdata.m_
+
 
 **task_space** 
 Choose between ``cartesian`` and ``joint``
@@ -34,6 +36,8 @@ It is a vector containing the length of the predictive horizon you want to test.
 It is the number of prediction time instants used by MPC-based method (along the horizon window)
 
 ## References
+
+If you wish to use this code please cite one of the following publications:
 
 [1] Marco Faroni, Manuel Beschi, Corrado Guarino Lo Bianco, and Antonio Visioli. Predictive jointtrajectory scaling for manipulators with kinodynamic constraints. Control Engineering Practice, 95:104264, 2020. Available at https://www.sciencedirect.com/science/article/pii/S0967066119302151
 
