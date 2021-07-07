@@ -20,7 +20,8 @@ Choose the trajectory scaling method:
 * ``cthor`` : use a Cartesian-space MPC trajectory scaling algorithm (see [2])
 * ``local`` : use a non-look ahead joint-space trajectory scaling algorithm (see [3])
 * ``clocal`` : use a non-look ahead Cartesian-space trajectory scaling algorithm (see [3])
-*_Important_*: ``local`` and ``clocal`` can be used with or without time-law adaptation module (see [3] for details). If you wish to activate the timing-law adaptation module you should set the parameter MODIFY_SREF equal to 1 in the files _controllers/local/controllerdata.m_ and _controllers/clocal/controllerdata.m_
+
+_*Important*_: ``local`` and ``clocal`` can be used with or without time-law adaptation module (see [3] for details). If you wish to activate the timing-law adaptation module you should set the parameter MODIFY_SREF equal to 1 in the files _controllers/local/controllerdata.m_ and _controllers/clocal/controllerdata.m_
 
 
 **task_space** 
